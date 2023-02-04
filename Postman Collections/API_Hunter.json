@@ -316,17 +316,17 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "eb2bccbc-5a3c-45e7-9ab9-b2fb27cb6018",
+				"id": "4aa1d05d-38b7-402c-a774-ffece6dc5fc4",
 				"type": "text/javascript",
 				"exec": [
-					"  console.log(response.Data.Id);"
+					""
 				]
 			}
 		},
 		{
 			"listen": "test",
 			"script": {
-				"id": "15d9ffa5-b6cf-4276-b615-f4f7801be69d",
+				"id": "dfae13a1-d2f4-4e0a-9339-4a9e343b12fd",
 				"type": "text/javascript",
 				"exec": [
 					"",
@@ -392,7 +392,7 @@
 	],
 	"variable": [
 		{
-			"id": "11630c89-625f-4735-8f33-380d56f6094d",
+			"id": "759f3385-1dc9-4b28-b6d5-dfb66b7c1764",
 			"key": "id_lead",
 			"value": "1111"
 		}
