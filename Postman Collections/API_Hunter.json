@@ -1,0 +1,177 @@
+{
+	"info": {
+		"_postman_id": "a8ea19ea-59de-43b8-bb4a-484924556c01",
+		"name": "API Hunter",
+		"description": "Coleção de testes da API Hunter.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Leads",
+			"item": [
+				{
+					"name": "Recuperar todos leads cadastrados",
+					"item": [
+						{
+							"name": "Buscar todos os Leads",
+							"id": "0f30af9a-5d05-4ffa-9750-df0f687ceb02",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{URL_base}}leads",
+								"description": "Buscando todos os Leads"
+							},
+							"response": []
+						},
+						{
+							"name": "Buscar todos os Leads específico",
+							"id": "c6e1b6c1-9022-4a6a-8602-852e105a6abe",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{URL_base}}leads/{{id_lead}}",
+								"description": "Buscando todos os Leads"
+							},
+							"response": []
+						}
+					],
+					"id": "f29f5029-41cd-4ff3-98a2-3792050188c5"
+				},
+				{
+					"name": "Criar novo lead",
+					"item": [
+						{
+							"name": "New Request",
+							"id": "c3f5e3d3-f52a-4d66-8912-701a74971f82",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"{{email_lead}}\",\r\n  \"first_name\": \"{{first_name_lead}}\",\r\n  \"last_name\": \"{{last_name_lead}}\",\r\n  \"position\": \"{{position_lead}}\",\r\n  \"company\": \"{{company_lead}}\",\r\n  \"company_industry\": \"{{industry_lead}}\"\r\n  \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{URL_base}}leads"
+							},
+							"response": []
+						}
+					],
+					"id": "c67d43c1-0018-4466-8d2a-3b1d6fc4f58e"
+				},
+				{
+					"name": "Editar lead",
+					"item": [
+						{
+							"name": "New Request",
+							"id": "b1756624-89a0-4058-a54c-a86a6c8547a0",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"{{email_lead_edit}}\",\r\n  \"first_name\": \"{{first_name_lead_edit}}\",\r\n  \"last_name\": \"{{last_name_lead_edit}}\",\r\n  \"position\": \"{{position_lead_edit}}\",\r\n  \"company\": \"{{company_lead_edit}}\",\r\n  \"company_industry\": \"{{industry_lead_edit}}\" \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{URL_base}}leads/{{id_lead}}",
+								"description": "Editar Lead"
+							},
+							"response": []
+						}
+					],
+					"id": "5479930c-a93e-4b21-b807-58ca46573830"
+				},
+				{
+					"name": "Excluir lead",
+					"item": [],
+					"id": "f417a229-da4e-4985-9dd2-a2156ea423d6"
+				}
+			],
+			"id": "65e267d2-971b-4e51-9484-22ed5d643ae5",
+			"description": "Pasta para suite de testes de Leads"
+		},
+		{
+			"name": "Leads Lists",
+			"item": [
+				{
+					"name": "Recuperar todas listas de leads cadastradas",
+					"item": [],
+					"id": "f908a634-f5ab-48c3-a795-b26d111e9931"
+				},
+				{
+					"name": "Criar nova lista de lead",
+					"item": [],
+					"id": "3fe31d46-bdd5-481c-b212-ea3f5dc52b1c"
+				},
+				{
+					"name": "Editar lista de lead",
+					"item": [],
+					"id": "cb921c09-4550-44d9-a468-25bb317f3e11"
+				},
+				{
+					"name": "Excluir lista de lead",
+					"item": [],
+					"id": "6760e641-d15a-4eb0-b9f9-7633263513d5"
+				}
+			],
+			"id": "e09de28c-945a-47d3-a4e1-9b740cb0777d",
+			"description": "Pasta para suite de testes de Leads Lists"
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": {
+			"in": "query",
+			"value": "44d82e13d002262ac14fdbfc779a75bcf5a417ea",
+			"key": "api_key"
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "7c3eda77-1b23-4494-b2d4-dfc1a3c12493",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "a920b460-c172-4a9c-8f1b-ebb838f135fa",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "55a3c792-a4af-46f4-8c46-404b96ca0adf",
+			"key": "id_lead",
+			"value": "1111"
+		}
+	]
+}
