@@ -47,7 +47,7 @@
 					"name": "Criar novo lead",
 					"item": [
 						{
-							"name": "New Request",
+							"name": "Criar Lead",
 							"id": "c3f5e3d3-f52a-4d66-8912-701a74971f82",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -221,7 +221,7 @@
 	],
 	"variable": [
 		{
-			"id": "63d9756b-a602-4be1-bb10-d6b181520bcb",
+			"id": "9c3e8987-676a-4b2b-bd22-6da2d4b098a1",
 			"key": "id_lead",
 			"value": "1111"
 		}
