@@ -315,7 +315,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "b22ed16b-d638-47c7-b6d7-5c48ed37730e",
+				"id": "f9418b0e-13cb-4fe0-bc77-8f87070b32e9",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -325,7 +325,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "b7580ab4-602b-460d-a23b-c0644fb27929",
+				"id": "564470f7-65e9-4dbe-8878-4ae21d77540d",
 				"type": "text/javascript",
 				"exec": [
 					"",
@@ -368,7 +368,7 @@
 					"",
 					"",
 					"//MÉTODOS PUT e POST - Valida se retorna a String e Content",
-					"if(pm.request.method=='PUT'|| pm.request.method=='POST'){ ",
+					"if(pm.request.method=='PUT'|| pm.request.method=='DELETE'){ ",
 					"",
 					"    pm.test(\"Status code name has string\", function () {",
 					"        pm.response.to.have.status(\"No Content\");",
@@ -384,7 +384,7 @@
 	],
 	"variable": [
 		{
-			"id": "a6ffa3a1-7be9-4f9c-b72d-ad4a8f1dfc3b",
+			"id": "ebbec2ef-0db0-4fb5-b682-a50e484b4090",
 			"key": "id_lead",
 			"value": "1111"
 		}
