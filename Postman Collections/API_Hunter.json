@@ -178,7 +178,7 @@
 					"name": "Editar lista de lead",
 					"item": [
 						{
-							"name": "Editar Lead Copy",
+							"name": "Editar List Lead",
 							"id": "ccfab148-4629-4811-981d-42eb9ad46d00",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -259,7 +259,7 @@
 	],
 	"variable": [
 		{
-			"id": "cb7b15a5-9355-416a-a0ad-f96984a718b5",
+			"id": "c11cf33d-5178-47b3-a66a-5caadb12f33f",
 			"key": "id_lead",
 			"value": "1111"
 		}
