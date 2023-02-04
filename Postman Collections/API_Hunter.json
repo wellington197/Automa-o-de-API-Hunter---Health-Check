@@ -316,7 +316,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "ba996083-8fda-4251-89bd-33eb75564e1b",
+				"id": "c0d9ec4f-8ef4-4469-9ad0-dc029177fa6f",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -326,7 +326,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "b008f238-973a-404e-89ab-1871b6813f5e",
+				"id": "69b86c2c-11b0-46d4-a3a0-f6f8b0f33541",
 				"type": "text/javascript",
 				"exec": [
 					"",
@@ -368,7 +368,7 @@
 					"    if(pm.info.requestName=='Criar List Lead'){",
 					"        pm.environment.set(\"id_lead_list\",pm.response.json().data.list.id); // Executa a List Lead",
 					"",
-					"    }*/",
+					"    }",
 					"}",
 					"//MÉTODOS PUT e DELETE - Valida se retorna a String e Content",
 					"if(pm.request.method=='PUT'|| pm.request.method=='DELETE'){ ",
@@ -387,7 +387,7 @@
 	],
 	"variable": [
 		{
-			"id": "8e56e805-619d-42a9-ba84-2f1417b3dcbd",
+			"id": "f3dfaf6b-5960-4f35-b514-5627aa8165e8",
 			"key": "id_lead",
 			"value": "1111"
 		}
