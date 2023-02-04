@@ -54,7 +54,12 @@
 									"script": {
 										"id": "563c39e6-f443-42e9-a86c-2338a7f80984",
 										"exec": [
-											""
+											"pm.iterationData.get(\"email_lead\")\r",
+											"pm.iterationData.get(\"first_name_lead\")\r",
+											"pm.iterationData.get(\"last_name_lead\")\r",
+											"pm.iterationData.get(\"position_lead\")\r",
+											"pm.iterationData.get(\"company_lead\")\r",
+											"pm.iterationData.get(\"industry_lead\")"
 										],
 										"type": "text/javascript"
 									}
@@ -79,7 +84,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n\t\t\"email\": \"Pedro@Pedro.com\",\r\n\t\t\"first_name\": \"Pedro\",\r\n\t\t\"last_name\": \"silveira\",\r\n\t\t\"position\": \"Analyst\",\r\n\t\t\"company\": \"Meta Company\",\r\n\t\t\"company_industry\": \"Tecnology\"\r\n\r\n}",
+									"raw": "{\r\n  \"email\": \"{{email_lead}}\",\r\n  \"first_name\": \"{{first_name_lead}}\",\r\n  \"last_name\": \"{{last_name_lead}}\",\r\n  \"position\": \"{{position_lead}}\",\r\n  \"company\": \"{{company_lead}}\",\r\n  \"company_industry\": \"{{industry_lead}}\"\r\n\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
