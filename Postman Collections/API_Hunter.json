@@ -184,6 +184,19 @@
 					"item": [
 						{
 							"name": "Criar List Lead",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "41ca7397-ba21-4116-bd7f-c074b2549b3c",
+										"exec": [
+											"pm.iterationData.get(\"lead_list_name\")\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "cc1ac085-834d-4157-95ff-65bc8942c6d7",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -292,7 +305,7 @@
 	],
 	"variable": [
 		{
-			"id": "a73649c6-4216-4199-af4a-9bb44c97c602",
+			"id": "f517b56d-7aee-4bd7-a04c-0e0b95a0e577",
 			"key": "id_lead",
 			"value": "1111"
 		}
