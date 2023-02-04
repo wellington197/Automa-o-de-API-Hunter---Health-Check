@@ -14,7 +14,7 @@
 					"item": [
 						{
 							"name": "Buscar todos os Leads",
-							"_postman_id": "0f30af9a-5d05-4ffa-9750-df0f687ceb02",
+							"id": "0f30af9a-5d05-4ffa-9750-df0f687ceb02",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -28,7 +28,7 @@
 						},
 						{
 							"name": "Buscar todos os Leads específico",
-							"_postman_id": "c6e1b6c1-9022-4a6a-8602-852e105a6abe",
+							"id": "c6e1b6c1-9022-4a6a-8602-852e105a6abe",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -41,15 +41,14 @@
 							"response": []
 						}
 					],
-					"_postman_id": "f29f5029-41cd-4ff3-98a2-3792050188c5",
-					"_postman_isSubFolder": true
+					"id": "f29f5029-41cd-4ff3-98a2-3792050188c5"
 				},
 				{
 					"name": "Criar novo lead",
 					"item": [
 						{
 							"name": "New Request",
-							"_postman_id": "c3f5e3d3-f52a-4d66-8912-701a74971f82",
+							"id": "c3f5e3d3-f52a-4d66-8912-701a74971f82",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -70,15 +69,14 @@
 							"response": []
 						}
 					],
-					"_postman_id": "c67d43c1-0018-4466-8d2a-3b1d6fc4f58e",
-					"_postman_isSubFolder": true
+					"id": "c67d43c1-0018-4466-8d2a-3b1d6fc4f58e"
 				},
 				{
 					"name": "Editar lead",
 					"item": [
 						{
 							"name": "New Request",
-							"_postman_id": "b1756624-89a0-4058-a54c-a86a6c8547a0",
+							"id": "b1756624-89a0-4058-a54c-a86a6c8547a0",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -87,7 +85,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"email\": \"{{email_lead_edit}}\",\r\n  \"first_name\": \"{{first_name_lead_edit}}\",\r\n  \"last_name\": \"{{last_name_lead_edit}}\",\r\n  \"position\": \"{{position_lead_edit}}\",\r\n  \"company\": \"{{company_lead_edit}}\",\r\n  \"company_industry\": \"{{industry_lead_edit}}\"\r\n  \r\n}",
+									"raw": "{\r\n  \"email\": \"{{email_lead_edit}}\",\r\n  \"first_name\": \"{{first_name_lead_edit}}\",\r\n  \"last_name\": \"{{last_name_lead_edit}}\",\r\n  \"position\": \"{{position_lead_edit}}\",\r\n  \"company\": \"{{company_lead_edit}}\",\r\n  \"company_industry\": \"{{industry_lead_edit}}\" \r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -100,17 +98,15 @@
 							"response": []
 						}
 					],
-					"_postman_id": "5479930c-a93e-4b21-b807-58ca46573830",
-					"_postman_isSubFolder": true
+					"id": "5479930c-a93e-4b21-b807-58ca46573830"
 				},
 				{
 					"name": "Excluir lead",
 					"item": [],
-					"_postman_id": "f417a229-da4e-4985-9dd2-a2156ea423d6",
-					"_postman_isSubFolder": true
+					"id": "f417a229-da4e-4985-9dd2-a2156ea423d6"
 				}
 			],
-			"_postman_id": "65e267d2-971b-4e51-9484-22ed5d643ae5",
+			"id": "65e267d2-971b-4e51-9484-22ed5d643ae5",
 			"description": "Pasta para suite de testes de Leads"
 		},
 		{
@@ -119,29 +115,25 @@
 				{
 					"name": "Recuperar todas listas de leads cadastradas",
 					"item": [],
-					"_postman_id": "f908a634-f5ab-48c3-a795-b26d111e9931",
-					"_postman_isSubFolder": true
+					"id": "f908a634-f5ab-48c3-a795-b26d111e9931"
 				},
 				{
 					"name": "Criar nova lista de lead",
 					"item": [],
-					"_postman_id": "3fe31d46-bdd5-481c-b212-ea3f5dc52b1c",
-					"_postman_isSubFolder": true
+					"id": "3fe31d46-bdd5-481c-b212-ea3f5dc52b1c"
 				},
 				{
 					"name": "Editar lista de lead",
 					"item": [],
-					"_postman_id": "cb921c09-4550-44d9-a468-25bb317f3e11",
-					"_postman_isSubFolder": true
+					"id": "cb921c09-4550-44d9-a468-25bb317f3e11"
 				},
 				{
 					"name": "Excluir lista de lead",
 					"item": [],
-					"_postman_id": "6760e641-d15a-4eb0-b9f9-7633263513d5",
-					"_postman_isSubFolder": true
+					"id": "6760e641-d15a-4eb0-b9f9-7633263513d5"
 				}
 			],
-			"_postman_id": "e09de28c-945a-47d3-a4e1-9b740cb0777d",
+			"id": "e09de28c-945a-47d3-a4e1-9b740cb0777d",
 			"description": "Pasta para suite de testes de Leads Lists"
 		}
 	],
@@ -177,10 +169,9 @@
 	],
 	"variable": [
 		{
-			"id": "de37f8f7-bacd-4372-81e2-c7d574dddf07",
+			"id": "55a3c792-a4af-46f4-8c46-404b96ca0adf",
 			"key": "id_lead",
-			"value": "1111",
-			"type": "string"
+			"value": "1111"
 		}
 	]
 }
