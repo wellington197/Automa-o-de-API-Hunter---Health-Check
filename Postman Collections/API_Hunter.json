@@ -225,6 +225,19 @@
 					"item": [
 						{
 							"name": "Editar List Lead",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "fcf30307-bedd-429b-b008-1bd7bbc0d01e",
+										"exec": [
+											"pm.iterationData.get(\"lead_list_name_edit\")\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "ccfab148-4629-4811-981d-42eb9ad46d00",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -234,7 +247,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"email\": \"{{email_lead_edit}}\",\r\n  \"first_name\": \"{{first_name_lead_edit}}\",\r\n  \"last_name\": \"{{last_name_lead_edit}}\",\r\n  \"position\": \"{{position_lead_edit}}\",\r\n  \"company\": \"{{company_lead_edit}}\",\r\n  \"company_industry\": \"{{industry_lead_edit}}\" \r\n}",
+									"raw": "{\r\n  \"name\": \"{{lead_list_name_edit}}\" \r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -305,7 +318,7 @@
 	],
 	"variable": [
 		{
-			"id": "f517b56d-7aee-4bd7-a04c-0e0b95a0e577",
+			"id": "a14153df-bd75-42c9-b0f8-85b7605c4e28",
 			"key": "id_lead",
 			"value": "1111"
 		}
