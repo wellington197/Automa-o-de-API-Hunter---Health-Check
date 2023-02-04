@@ -315,7 +315,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "9dacc114-1150-4402-8272-e489e3b50215",
+				"id": "40b99a77-4e5a-4d09-92a7-f0d8904b8f7d",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -325,7 +325,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "e80ff410-7e8c-4bb4-a783-2565d6c04251",
+				"id": "20ce3b64-d278-4ecc-92c2-911e9a9b547e",
 				"type": "text/javascript",
 				"exec": [
 					"",
@@ -354,21 +354,29 @@
 					"        pm.expect(pm.response.code).to.be.oneOf([200,201,202]);",
 					"    });",
 					"",
+					"    pm.test(\"Status code name has string\", function () {",
+					"        pm.response.to.have.status(\"Created\");",
+					"    });",
+					"",
 					"}",
 					"",
-					"// Valida se Contant-Type é retornado",
-					"pm.test(\"Content-Type header is present\", () => {",
-					"  pm.response.to.have.header(\"Content-Type\");",
-					"});",
 					"",
-					""
+					"//MÉTODOS PUT e POST - Valida se retorna a String",
+					"if(pm.request.method=='PUT'|| pm.request.method=='POST'){ ",
+					"",
+					"    pm.test(\"Status code name has string\", function () {",
+					"        pm.response.to.have.status(\"No Content\");",
+					"    });",
+					"",
+					"",
+					"}"
 				]
 			}
 		}
 	],
 	"variable": [
 		{
-			"id": "904f9c2c-0692-4b3a-b807-c1a8fac90078",
+			"id": "f8527ac7-b1e7-48f0-9274-ecd7ee795917",
 			"key": "id_lead",
 			"value": "1111"
 		}
