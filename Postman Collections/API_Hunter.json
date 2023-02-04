@@ -102,7 +102,20 @@
 				},
 				{
 					"name": "Excluir lead",
-					"item": [],
+					"item": [
+						{
+							"name": "New Request",
+							"id": "8190cc50-8650-4b86-9adf-2ccbf9623a69",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					],
 					"id": "f417a229-da4e-4985-9dd2-a2156ea423d6"
 				}
 			],
@@ -169,7 +182,7 @@
 	],
 	"variable": [
 		{
-			"id": "55a3c792-a4af-46f4-8c46-404b96ca0adf",
+			"id": "c4a7b1bb-2be8-414e-a608-757a89eae4a3",
 			"key": "id_lead",
 			"value": "1111"
 		}
