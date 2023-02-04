@@ -315,7 +315,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "42f19680-c579-4b20-85a8-72cde30d8baa",
+				"id": "fce88126-f7a2-47e1-b802-4844bc21b880",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -325,7 +325,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "9ccf1622-5e1d-49f6-b3e8-3a679c02e88c",
+				"id": "dc30de6a-c710-4850-809f-735d72d4d742",
 				"type": "text/javascript",
 				"exec": [
 					"",
@@ -358,7 +358,7 @@
 					"        pm.response.to.have.status(\"Created\");",
 					"    });",
 					"",
-					"",
+					"    /*",
 					"    //SAÚDE DA API - Pegar ID e jogar em uma variável e ser ultilizado pelos outros métodos. Depois limpa e executa a mesma lista. Ideal sempre colocar via POST",
 					"    if(pm.info.requestName=='Criar Lead'){",
 					"        pm.environment.set(\"id_lead\",pm.response.json().data.id); //Executa a Lead",
@@ -367,7 +367,7 @@
 					"    if(pm.info.requestName=='Criar List Lead'){",
 					"        pm.environment.set(\"id_lead_list\",pm.response.json().data.list.id); // Executa a List Lead",
 					"",
-					"    }",
+					"    }*/",
 					"}",
 					"//MÉTODOS PUT e DELETE - Valida se retorna a String e Content",
 					"if(pm.request.method=='PUT'|| pm.request.method=='DELETE'){ ",
@@ -386,7 +386,7 @@
 	],
 	"variable": [
 		{
-			"id": "7b049f14-4cba-4a96-9839-e243ebc66a0e",
+			"id": "6793ff79-79f2-4bbd-b22d-f70b7dc2ffaf",
 			"key": "id_lead",
 			"value": "1111"
 		}
