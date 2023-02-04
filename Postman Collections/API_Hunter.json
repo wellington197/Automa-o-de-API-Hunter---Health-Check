@@ -77,7 +77,7 @@
 											"  \r",
 											"    //SAÚDE DA API - Pegar ID e jogar em uma variável e ser ultilizado pelos outros métodos. Depois limpa e executa a mesma lista. Ideal sempre colocar via POST\r",
 											"   //if(pm.info.requestName=='Criar Lead'){\r",
-											"        pm.environment.set(\"id_lead\",response.data.leads.id); //Executa a Lead\r",
+											"        pm.environment.set(\"id_lead\",response.data.id); //Executa a Lead\r",
 											"\r",
 											"//    }"
 										],
@@ -407,7 +407,7 @@
 	],
 	"variable": [
 		{
-			"id": "9d746991-1380-4230-b218-ebf5fe2f4888",
+			"id": "5b1e299d-59f9-4483-b91a-57abe1aed235",
 			"key": "id_lead",
 			"value": "1111"
 		}
