@@ -150,7 +150,7 @@
 					"name": "Criar nova lista de lead",
 					"item": [
 						{
-							"name": "New Request Copy",
+							"name": "Criar List Lead",
 							"id": "cc1ac085-834d-4157-95ff-65bc8942c6d7",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -221,7 +221,7 @@
 	],
 	"variable": [
 		{
-			"id": "4de810f1-551f-4bfb-977e-378c0585e5c4",
+			"id": "3a1e6595-f247-4b15-94d1-ef79cd9f18f1",
 			"key": "id_lead",
 			"value": "1111"
 		}
