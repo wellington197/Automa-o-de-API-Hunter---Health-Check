@@ -152,7 +152,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{URL_base}}leads/{{id_lead}}",
+								"url": "{{URL_base}}leads/{{id_lead_list}}",
 								"description": "Buscando todos os Leads"
 							},
 							"response": []
@@ -273,7 +273,7 @@
 	],
 	"variable": [
 		{
-			"id": "a56609e4-45ba-44c3-b32d-a7736f2a22cf",
+			"id": "749d11e8-140d-41fc-be92-1d0d56fac433",
 			"key": "id_lead",
 			"value": "1111"
 		}
