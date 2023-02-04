@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "a8ea19ea-59de-43b8-bb4a-484924556c01",
 		"name": "API Hunter",
-		"description": "Coleção de testes da API Hunter.",
+		"description": "Coleção de testes da API Hunter, onde é exeucatdo as Lead e as List Lead",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
@@ -376,7 +376,7 @@
 	],
 	"variable": [
 		{
-			"id": "f8527ac7-b1e7-48f0-9274-ecd7ee795917",
+			"id": "263d30c8-1155-4620-ba2c-d64645a6192c",
 			"key": "id_lead",
 			"value": "1111"
 		}
