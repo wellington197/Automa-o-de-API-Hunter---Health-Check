@@ -104,7 +104,7 @@
 					"name": "Excluir lead",
 					"item": [
 						{
-							"name": "New Request",
+							"name": "Excluir Lead",
 							"id": "8190cc50-8650-4b86-9adf-2ccbf9623a69",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -221,7 +221,7 @@
 	],
 	"variable": [
 		{
-			"id": "9c3e8987-676a-4b2b-bd22-6da2d4b098a1",
+			"id": "4de810f1-551f-4bfb-977e-378c0585e5c4",
 			"key": "id_lead",
 			"value": "1111"
 		}
