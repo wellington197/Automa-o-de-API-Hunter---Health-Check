@@ -315,7 +315,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "f9418b0e-13cb-4fe0-bc77-8f87070b32e9",
+				"id": "08c33214-22eb-4741-bdd6-7dab1d6f92f8",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -325,7 +325,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "564470f7-65e9-4dbe-8878-4ae21d77540d",
+				"id": "b132ab0c-69d9-49ef-9068-dcef5e84e64e",
 				"type": "text/javascript",
 				"exec": [
 					"",
@@ -367,7 +367,7 @@
 					"}",
 					"",
 					"",
-					"//MÉTODOS PUT e POST - Valida se retorna a String e Content",
+					"//MÉTODOS PUT e DELETE - Valida se retorna a String e Content",
 					"if(pm.request.method=='PUT'|| pm.request.method=='DELETE'){ ",
 					"",
 					"    pm.test(\"Status code name has string\", function () {",
@@ -384,7 +384,7 @@
 	],
 	"variable": [
 		{
-			"id": "ebbec2ef-0db0-4fb5-b682-a50e484b4090",
+			"id": "28ef6a99-2b7e-44fc-b03b-45412fcafaae",
 			"key": "id_lead",
 			"value": "1111"
 		}
