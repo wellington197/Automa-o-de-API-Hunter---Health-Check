@@ -142,6 +142,20 @@
 								"description": "Buscando todos os Leads"
 							},
 							"response": []
+						},
+						{
+							"name": "Recuperar List Lead",
+							"id": "5b3466a7-6d57-4ce5-a1a7-9b42c263d7ce",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{URL_base}}leads/{{id_lead}}",
+								"description": "Buscando todos os Leads"
+							},
+							"response": []
 						}
 					],
 					"id": "f908a634-f5ab-48c3-a795-b26d111e9931"
@@ -259,7 +273,7 @@
 	],
 	"variable": [
 		{
-			"id": "c11cf33d-5178-47b3-a66a-5caadb12f33f",
+			"id": "a56609e4-45ba-44c3-b32d-a7736f2a22cf",
 			"key": "id_lead",
 			"value": "1111"
 		}
