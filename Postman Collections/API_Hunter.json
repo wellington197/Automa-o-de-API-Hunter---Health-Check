@@ -128,7 +128,22 @@
 			"item": [
 				{
 					"name": "Recuperar todas listas de leads cadastradas",
-					"item": [],
+					"item": [
+						{
+							"name": "Buscar todos os Leads",
+							"id": "0bfa4a65-e486-4229-b5ea-e9d0d2ea5fb8",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{URL_base}}leads",
+								"description": "Buscando todos os Leads"
+							},
+							"response": []
+						}
+					],
 					"id": "f908a634-f5ab-48c3-a795-b26d111e9931"
 				},
 				{
@@ -183,7 +198,7 @@
 	],
 	"variable": [
 		{
-			"id": "77772f29-a7cf-4871-bec3-6611add91cca",
+			"id": "b21b66e1-fbd9-485f-ac69-17f418e683f5",
 			"key": "id_lead",
 			"value": "1111"
 		}
