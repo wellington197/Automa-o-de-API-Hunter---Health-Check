@@ -54,16 +54,7 @@
 									"script": {
 										"id": "563c39e6-f443-42e9-a86c-2338a7f80984",
 										"exec": [
-											"/*\r",
-											"\r",
-											"pm.iterationData.get(\"email_lead\")\r",
-											"pm.iterationData.get(\"first_name_lead\")\r",
-											"pm.iterationData.get(\"last_name_lead\")\r",
-											"pm.iterationData.get(\"position_lead\")\r",
-											"pm.iterationData.get(\"company_lead\")\r",
-											"pm.iterationData.get(\"industry_lead\")\r",
-											"\r",
-											"*/"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -73,13 +64,7 @@
 									"script": {
 										"id": "45c00904-90bb-4b23-8c79-8a5858c03828",
 										"exec": [
-											"const response = pm.response.json();\r",
-											"  \r",
-											"    //SAÚDE DA API - Pegar ID e jogar em uma variável e ser ultilizado pelos outros métodos. Depois limpa e executa a mesma lista. Ideal sempre colocar via POST\r",
-											"   //if(pm.info.requestName=='Criar Lead'){\r",
-											"        pm.environment.set(\"id_lead\",response.data.id); //Executa a Lead\r",
-											"\r",
-											"//    }"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -94,7 +79,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n\t\t\"email\": \"Pedro@Pedro.com\",\r\n\t\t\"first_name\": \"Pedro\",\r\n\t\t\"last_name\": \"silveira\",\r\n\t\t\"position\": \"Analyst\",\r\n\t\t\"company\": \"Meta Company\",\r\n\t\t\"company_industry\": \"Tecnology\"\r\n\r\n}\r\n/*\r\n{\r\n  \"email\": \"{{email_lead}}\",\r\n  \"first_name\": \"{{first_name_lead}}\",\r\n  \"last_name\": \"{{last_name_lead}}\",\r\n  \"position\": \"{{position_lead}}\",\r\n  \"company\": \"{{company_lead}}\",\r\n  \"company_industry\": \"{{industry_lead}}\"\r\n  \r\n}\r\n*/",
+									"raw": "{\r\n\t\t\"email\": \"Pedro@Pedro.com\",\r\n\t\t\"first_name\": \"Pedro\",\r\n\t\t\"last_name\": \"silveira\",\r\n\t\t\"position\": \"Analyst\",\r\n\t\t\"company\": \"Meta Company\",\r\n\t\t\"company_industry\": \"Tecnology\"\r\n\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -407,7 +392,7 @@
 	],
 	"variable": [
 		{
-			"id": "5b1e299d-59f9-4483-b91a-57abe1aed235",
+			"id": "786c1a21-4f6a-4f5a-9353-fa891ff87d84",
 			"key": "id_lead",
 			"value": "1111"
 		}
