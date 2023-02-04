@@ -101,12 +101,13 @@
 									"script": {
 										"id": "1df68c4b-6a2d-455e-a95b-264800912355",
 										"exec": [
-											"pm.iterationData.get(\"email_lead\")\r",
-											"pm.iterationData.get(\"first_name_lead\")\r",
-											"pm.iterationData.get(\"last_name_lead\")\r",
-											"pm.iterationData.get(\"position_lead\")\r",
-											"pm.iterationData.get(\"company_lead\")\r",
-											"pm.iterationData.get(\"industry_lead\")"
+											"pm.iterationData.get(\"email_lead_edit\")\r",
+											"pm.iterationData.get(\"first_name_lead_edit\")\r",
+											"pm.iterationData.get(\"last_name_lead_edit\")\r",
+											"pm.iterationData.get(\"position_lead_edit\")\r",
+											"pm.iterationData.get(\"company_lead_edit\")\r",
+											"pm.iterationData.get(\"industry_lead_edit\")\r",
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -386,7 +387,7 @@
 	],
 	"variable": [
 		{
-			"id": "6793ff79-79f2-4bbd-b22d-f70b7dc2ffaf",
+			"id": "99f6f543-f758-4e47-b741-0708bd458c6b",
 			"key": "id_lead",
 			"value": "1111"
 		}
