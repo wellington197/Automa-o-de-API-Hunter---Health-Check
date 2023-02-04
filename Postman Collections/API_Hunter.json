@@ -48,6 +48,25 @@
 					"item": [
 						{
 							"name": "Criar Lead",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "563c39e6-f443-42e9-a86c-2338a7f80984",
+										"exec": [
+											"pm.iterationData.get(\"email_lead\")\r",
+											"pm.iterationData.get(\"first_name_lead\")\r",
+											"pm.iterationData.get(\"last_name_lead\")\r",
+											"pm.iterationData.get(\"position_lead\")\r",
+											"pm.iterationData.get(\"company_lead\")\r",
+											"pm.iterationData.get(\"industry_lead\")\r",
+											"\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "c3f5e3d3-f52a-4d66-8912-701a74971f82",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -273,7 +292,7 @@
 	],
 	"variable": [
 		{
-			"id": "5f0abf3b-ba04-4ddd-8c79-d6e2ab8da4cd",
+			"id": "a73649c6-4216-4199-af4a-9bb44c97c602",
 			"key": "id_lead",
 			"value": "1111"
 		}
