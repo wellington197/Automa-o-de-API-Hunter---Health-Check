@@ -316,7 +316,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "6cac7fe9-ee03-451f-8fed-12a318978b1a",
+				"id": "c7b22a2f-4e39-4f2f-91da-e8e746c84eb4",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -326,7 +326,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "47011732-e73e-4b24-a3ab-dbe0de9fb321",
+				"id": "486fc7a7-f390-49d3-ac4c-8a282d982027",
 				"type": "text/javascript",
 				"exec": [
 					"",
@@ -358,6 +358,11 @@
 					"    pm.test(\"Status code name has string\", function () {",
 					"        pm.response.to.have.status(\"Created\");",
 					"    });",
+					"",
+					"    const response = pm.response.json();",
+					"    console.log(response.Data.Id);",
+					"    pm.environment.set(\"id_lead\", response.Data.Id);",
+					"",
 					"/*",
 					"    //SAÚDE DA API - Pegar ID e jogar em uma variável e ser ultilizado pelos outros métodos. Depois limpa e executa a mesma lista. Ideal sempre colocar via POST",
 					"   if(pm.info.requestName=='Criar Lead'){",
@@ -386,7 +391,7 @@
 	],
 	"variable": [
 		{
-			"id": "b787fe7d-664d-484b-bda1-7c37c58d26d1",
+			"id": "a9a90ac5-e6cd-4b18-b59c-2802895e5bab",
 			"key": "id_lead",
 			"value": "1111"
 		}
