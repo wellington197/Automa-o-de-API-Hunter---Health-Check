@@ -318,7 +318,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "4aa1d05d-38b7-402c-a774-ffece6dc5fc4",
+				"id": "5de03fd1-41a9-4fb4-804d-b2e2b8383691",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -328,7 +328,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "dfae13a1-d2f4-4e0a-9339-4a9e343b12fd",
+				"id": "c771a2fd-add3-4ad5-a007-16df22e4e195",
 				"type": "text/javascript",
 				"exec": [
 					"",
@@ -365,17 +365,17 @@
 					"    const response = pm.response.json();",
 					"    console.log(response.Data.Id);",
 					"    pm.environment.set(\"id_lead\", response.Data.Id);",
-					"",
+					"    */",
 					"",
 					"    //SAÚDE DA API - Pegar ID e jogar em uma variável e ser ultilizado pelos outros métodos. Depois limpa e executa a mesma lista. Ideal sempre colocar via POST",
 					"   if(pm.info.requestName=='Criar Lead'){",
-					"        pm.environment.set(\"id_lead\",pm.response.json().data.id); //Executa a Lead",
+					"        pm.environment.set(\"id_lead\",pm.response.json().data.leads.id); //Executa a Lead",
 					"",
 					"    }",
 					"   if(pm.info.requestName=='Criar List Lead'){",
 					"        pm.environment.set(\"id_lead_list\",pm.response.json().data.list.id); // Executa a List Lead",
 					"",
-					"    }*/",
+					"    }",
 					"}",
 					"//MÉTODOS PUT e DELETE - Valida se retorna a String e Content",
 					"if(pm.request.method=='PUT'|| pm.request.method=='DELETE'){ ",
@@ -394,7 +394,7 @@
 	],
 	"variable": [
 		{
-			"id": "a73bf243-c79a-43aa-9ebd-beb6e9b66b88",
+			"id": "1ed1c1d7-076b-4694-840e-be242e5a7b45",
 			"key": "id_lead",
 			"value": "1111"
 		}
