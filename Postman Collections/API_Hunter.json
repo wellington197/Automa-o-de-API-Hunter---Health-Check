@@ -315,7 +315,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "7c3eda77-1b23-4494-b2d4-dfc1a3c12493",
+				"id": "9dacc114-1150-4402-8272-e489e3b50215",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -325,9 +325,42 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "a920b460-c172-4a9c-8f1b-ebb838f135fa",
+				"id": "e80ff410-7e8c-4bb4-a783-2565d6c04251",
 				"type": "text/javascript",
 				"exec": [
+					"",
+					"//MÉTODOS GET - Valida se status code está retornando de forma correta para o Método GET",
+					"if(pm.request.method=='GET'){ ",
+					"        pm.test(\"Status code is 200\", function () {",
+					"            pm.response.to.have.status(200);",
+					"        });",
+					"    //Valida se retorna a string com OK",
+					"    pm.test(\"Status code name has string\", function () {",
+					"        pm.response.to.have.status(\"OK\");",
+					"    });",
+					"}",
+					"",
+					"//MÉTODOS GET e POST - Testa tempo de resposta para dois métodos: Muito importante para avaliar a velocidade de resposta da API.",
+					"if(pm.request.method=='GET'|| pm.request.method=='POST'){ ",
+					"  ",
+					"    pm.test(\"Response time is less than 2000ms\", () => {",
+					"    pm.expect(pm.response.responseTime).to.be.below(2000);",
+					"    });",
+					" ",
+					"}",
+					"",
+					"if(pm.request.method=='POST'){ ",
+					"    pm.test(\"Successful POST request\", function () {",
+					"        pm.expect(pm.response.code).to.be.oneOf([200,201,202]);",
+					"    });",
+					"",
+					"}",
+					"",
+					"// Valida se Contant-Type é retornado",
+					"pm.test(\"Content-Type header is present\", () => {",
+					"  pm.response.to.have.header(\"Content-Type\");",
+					"});",
+					"",
 					""
 				]
 			}
@@ -335,7 +368,7 @@
 	],
 	"variable": [
 		{
-			"id": "2c3591e6-2554-4f01-9a61-9ed732971d51",
+			"id": "904f9c2c-0692-4b3a-b807-c1a8fac90078",
 			"key": "id_lead",
 			"value": "1111"
 		}
