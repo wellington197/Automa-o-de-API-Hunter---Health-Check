@@ -110,8 +110,9 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
-								"header": []
+								"method": "DELETE",
+								"header": [],
+								"url": "{{URL_base}}leads/{{id_lead}}"
 							},
 							"response": []
 						}
@@ -182,7 +183,7 @@
 	],
 	"variable": [
 		{
-			"id": "c4a7b1bb-2be8-414e-a608-757a89eae4a3",
+			"id": "77772f29-a7cf-4871-bec3-6611add91cca",
 			"key": "id_lead",
 			"value": "1111"
 		}
