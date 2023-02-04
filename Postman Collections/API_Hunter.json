@@ -54,6 +54,8 @@
 									"script": {
 										"id": "563c39e6-f443-42e9-a86c-2338a7f80984",
 										"exec": [
+											"/*\r",
+											"\r",
 											"pm.iterationData.get(\"email_lead\")\r",
 											"pm.iterationData.get(\"first_name_lead\")\r",
 											"pm.iterationData.get(\"last_name_lead\")\r",
@@ -61,7 +63,7 @@
 											"pm.iterationData.get(\"company_lead\")\r",
 											"pm.iterationData.get(\"industry_lead\")\r",
 											"\r",
-											""
+											"*/"
 										],
 										"type": "text/javascript"
 									}
@@ -76,7 +78,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"email\": \"{{email_lead}}\",\r\n  \"first_name\": \"{{first_name_lead}}\",\r\n  \"last_name\": \"{{last_name_lead}}\",\r\n  \"position\": \"{{position_lead}}\",\r\n  \"company\": \"{{company_lead}}\",\r\n  \"company_industry\": \"{{industry_lead}}\"\r\n  \r\n}",
+									"raw": "{\r\n\t\t\"email\": \"Pedro@Pedro.com\",\r\n\t\t\"first_name\": \"Pedro\",\r\n\t\t\"last_name\": \"silveira\",\r\n\t\t\"position\": \"Analyst\",\r\n\t\t\"company\": \"Meta Company\",\r\n\t\t\"company_industry\": \"Tecnology\"\r\n\r\n}\r\n/*\r\n{\r\n  \"email\": \"{{email_lead}}\",\r\n  \"first_name\": \"{{first_name_lead}}\",\r\n  \"last_name\": \"{{last_name_lead}}\",\r\n  \"position\": \"{{position_lead}}\",\r\n  \"company\": \"{{company_lead}}\",\r\n  \"company_industry\": \"{{industry_lead}}\"\r\n  \r\n}\r\n*/",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -392,7 +394,7 @@
 	],
 	"variable": [
 		{
-			"id": "759f3385-1dc9-4b28-b6d5-dfb66b7c1764",
+			"id": "a73bf243-c79a-43aa-9ebd-beb6e9b66b88",
 			"key": "id_lead",
 			"value": "1111"
 		}
