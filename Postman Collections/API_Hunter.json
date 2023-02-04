@@ -174,7 +174,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"email\": \"{{email_lead}}\",\r\n  \"first_name\": \"{{first_name_lead}}\",\r\n  \"last_name\": \"{{last_name_lead}}\",\r\n  \"position\": \"{{position_lead}}\",\r\n  \"company\": \"{{company_lead}}\",\r\n  \"company_industry\": \"{{industry_lead}}\"\r\n  \r\n}",
+									"raw": "{\r\n  \"name\": \"{{lead_list_name}}\" \r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -273,7 +273,7 @@
 	],
 	"variable": [
 		{
-			"id": "749d11e8-140d-41fc-be92-1d0d56fac433",
+			"id": "5f0abf3b-ba04-4ddd-8c79-d6e2ab8da4cd",
 			"key": "id_lead",
 			"value": "1111"
 		}
