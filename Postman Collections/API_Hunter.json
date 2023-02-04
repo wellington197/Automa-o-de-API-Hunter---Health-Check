@@ -315,7 +315,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "ca4b366b-d6b8-4de9-9f93-4ab8b626ae48",
+				"id": "b22ed16b-d638-47c7-b6d7-5c48ed37730e",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -325,7 +325,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "9992f713-b2e9-41a9-8dfa-9590fcf8e858",
+				"id": "b7580ab4-602b-460d-a23b-c0644fb27929",
 				"type": "text/javascript",
 				"exec": [
 					"",
@@ -358,7 +358,7 @@
 					"        pm.response.to.have.status(\"Created\");",
 					"    });",
 					"",
-					"    //SAÚDE DA API - Pegar ID e jogar em uma variável e ser ultilizado pelos outros métodos. Depois limpa e executa a mesma lista",
+					"    //SAÚDE DA API - Pegar ID e jogar em uma variável e ser ultilizado pelos outros métodos. Depois limpa e executa a mesma lista. Ideal sempre colocar via POST",
 					"    if(pm.info.requestName=='Criar Lead')",
 					"        pm.environment.set(\"id_lead\",pm.response.json().data.id); //Executa a Lead",
 					"    }else{",
@@ -384,7 +384,7 @@
 	],
 	"variable": [
 		{
-			"id": "910cedbe-3fdc-4d06-9e3a-5804af691c30",
+			"id": "a6ffa3a1-7be9-4f9c-b72d-ad4a8f1dfc3b",
 			"key": "id_lead",
 			"value": "1111"
 		}
