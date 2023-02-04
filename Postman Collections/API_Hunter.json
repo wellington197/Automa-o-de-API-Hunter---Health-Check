@@ -315,7 +315,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "40b99a77-4e5a-4d09-92a7-f0d8904b8f7d",
+				"id": "4c00af2c-ec7e-4091-bbae-5882cc860d57",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -325,11 +325,11 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "20ce3b64-d278-4ecc-92c2-911e9a9b547e",
+				"id": "7e7fbb6b-92ea-413a-8e53-9fc6a90ef40e",
 				"type": "text/javascript",
 				"exec": [
 					"",
-					"//MÉTODOS GET - Valida se status code está retornando de forma correta para o Método GET",
+					"//MÉTODOS GET - Valida se status code está retornando de forma correta para os Métodos GET",
 					"if(pm.request.method=='GET'){ ",
 					"        pm.test(\"Status code is 200\", function () {",
 					"            pm.response.to.have.status(200);",
@@ -361,14 +361,16 @@
 					"}",
 					"",
 					"",
-					"//MÉTODOS PUT e POST - Valida se retorna a String",
+					"//MÉTODOS PUT e POST - Valida se retorna a String e Content",
 					"if(pm.request.method=='PUT'|| pm.request.method=='POST'){ ",
 					"",
 					"    pm.test(\"Status code name has string\", function () {",
 					"        pm.response.to.have.status(\"No Content\");",
 					"    });",
 					"",
-					"",
+					"    pm.test(\"Status code is 204\", function () {",
+					"        pm.response.to.have.status(204);",
+					"    });",
 					"}"
 				]
 			}
@@ -376,7 +378,7 @@
 	],
 	"variable": [
 		{
-			"id": "263d30c8-1155-4620-ba2c-d64645a6192c",
+			"id": "fdc890ad-bbcf-4551-92b7-6f6c17b25165",
 			"key": "id_lead",
 			"value": "1111"
 		}
