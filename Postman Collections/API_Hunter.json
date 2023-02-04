@@ -315,7 +315,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "08c33214-22eb-4741-bdd6-7dab1d6f92f8",
+				"id": "13c20920-208c-4812-bf04-40573e280f89",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -325,7 +325,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "b132ab0c-69d9-49ef-9068-dcef5e84e64e",
+				"id": "e5eaf10d-3b83-4458-8e0a-a5c05e50f10d",
 				"type": "text/javascript",
 				"exec": [
 					"",
@@ -361,7 +361,8 @@
 					"    //SAÚDE DA API - Pegar ID e jogar em uma variável e ser ultilizado pelos outros métodos. Depois limpa e executa a mesma lista. Ideal sempre colocar via POST",
 					"    if(pm.info.requestName=='Criar Lead')",
 					"        pm.environment.set(\"id_lead\",pm.response.json().data.id); //Executa a Lead",
-					"    }else{",
+					"        ",
+					"    }if(pm.info.requestName=='Criar List Lead'){",
 					"        pm.environment.set(\"id_lead_list\",pm.response.json().data.list.id); // Executa a List Lead",
 					"",
 					"}",
@@ -384,7 +385,7 @@
 	],
 	"variable": [
 		{
-			"id": "28ef6a99-2b7e-44fc-b03b-45412fcafaae",
+			"id": "ef801321-5b55-42ee-978c-20f742bec0ce",
 			"key": "id_lead",
 			"value": "1111"
 		}
