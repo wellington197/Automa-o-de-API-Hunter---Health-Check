@@ -75,7 +75,7 @@
 					"name": "Editar lead",
 					"item": [
 						{
-							"name": "New Request",
+							"name": "Editar Lead",
 							"id": "b1756624-89a0-4058-a54c-a86a6c8547a0",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -148,7 +148,30 @@
 				},
 				{
 					"name": "Criar nova lista de lead",
-					"item": [],
+					"item": [
+						{
+							"name": "New Request Copy",
+							"id": "cc1ac085-834d-4157-95ff-65bc8942c6d7",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"{{email_lead}}\",\r\n  \"first_name\": \"{{first_name_lead}}\",\r\n  \"last_name\": \"{{last_name_lead}}\",\r\n  \"position\": \"{{position_lead}}\",\r\n  \"company\": \"{{company_lead}}\",\r\n  \"company_industry\": \"{{industry_lead}}\"\r\n  \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{URL_base}}leads"
+							},
+							"response": []
+						}
+					],
 					"id": "3fe31d46-bdd5-481c-b212-ea3f5dc52b1c"
 				},
 				{
@@ -198,7 +221,7 @@
 	],
 	"variable": [
 		{
-			"id": "b21b66e1-fbd9-485f-ac69-17f418e683f5",
+			"id": "63d9756b-a602-4be1-bb10-d6b181520bcb",
 			"key": "id_lead",
 			"value": "1111"
 		}
