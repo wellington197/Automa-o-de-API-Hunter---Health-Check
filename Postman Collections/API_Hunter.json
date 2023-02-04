@@ -316,7 +316,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "c0d9ec4f-8ef4-4469-9ad0-dc029177fa6f",
+				"id": "c4f2692a-66ba-4c0a-aee4-a08f587d3442",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -326,7 +326,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "69b86c2c-11b0-46d4-a3a0-f6f8b0f33541",
+				"id": "372cb447-0343-44c9-857b-daff9eecff81",
 				"type": "text/javascript",
 				"exec": [
 					"",
@@ -365,10 +365,10 @@
 					"        pm.environment.set(\"id_lead\",pm.response.json().data.id); //Executa a Lead",
 					"",
 					"    }",
-					"    if(pm.info.requestName=='Criar List Lead'){",
+					"   /* if(pm.info.requestName=='Criar List Lead'){",
 					"        pm.environment.set(\"id_lead_list\",pm.response.json().data.list.id); // Executa a List Lead",
 					"",
-					"    }",
+					"    }*/",
 					"}",
 					"//MÉTODOS PUT e DELETE - Valida se retorna a String e Content",
 					"if(pm.request.method=='PUT'|| pm.request.method=='DELETE'){ ",
@@ -387,7 +387,7 @@
 	],
 	"variable": [
 		{
-			"id": "f3dfaf6b-5960-4f35-b514-5627aa8165e8",
+			"id": "1c75e54d-e043-41f0-a610-f9f81f06f599",
 			"key": "id_lead",
 			"value": "1111"
 		}
