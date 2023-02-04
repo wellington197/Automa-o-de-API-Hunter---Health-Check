@@ -176,12 +176,50 @@
 				},
 				{
 					"name": "Editar lista de lead",
-					"item": [],
+					"item": [
+						{
+							"name": "Editar Lead Copy",
+							"id": "ccfab148-4629-4811-981d-42eb9ad46d00",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"{{email_lead_edit}}\",\r\n  \"first_name\": \"{{first_name_lead_edit}}\",\r\n  \"last_name\": \"{{last_name_lead_edit}}\",\r\n  \"position\": \"{{position_lead_edit}}\",\r\n  \"company\": \"{{company_lead_edit}}\",\r\n  \"company_industry\": \"{{industry_lead_edit}}\" \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{URL_base}}leads/{{id_lead}}",
+								"description": "Editar Lead"
+							},
+							"response": []
+						}
+					],
 					"id": "cb921c09-4550-44d9-a468-25bb317f3e11"
 				},
 				{
 					"name": "Excluir lista de lead",
-					"item": [],
+					"item": [
+						{
+							"name": "Excluir List Lead",
+							"id": "85b38e52-3c39-4411-9586-8b5c3ed4a19a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": "{{URL_base}}leads/{{id_lead}}"
+							},
+							"response": []
+						}
+					],
 					"id": "6760e641-d15a-4eb0-b9f9-7633263513d5"
 				}
 			],
@@ -221,7 +259,7 @@
 	],
 	"variable": [
 		{
-			"id": "3a1e6595-f247-4b15-94d1-ef79cd9f18f1",
+			"id": "cb7b15a5-9355-416a-a0ad-f96984a718b5",
 			"key": "id_lead",
 			"value": "1111"
 		}
