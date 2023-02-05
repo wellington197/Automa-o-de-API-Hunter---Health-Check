@@ -300,7 +300,7 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": "{{URL_base}}leads/{{id_lead}}"
+								"url": "{{URL_base}}leads_lists/{{id_lead}}"
 							},
 							"response": []
 						}
