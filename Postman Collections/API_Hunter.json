@@ -10,40 +10,6 @@
 			"name": "Leads",
 			"item": [
 				{
-					"name": "Recuperar todos leads cadastrados",
-					"item": [
-						{
-							"name": "Buscar todos os Leads",
-							"id": "0f30af9a-5d05-4ffa-9750-df0f687ceb02",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": "{{URL_base}}leads",
-								"description": "Buscando todos os Leads"
-							},
-							"response": []
-						},
-						{
-							"name": "Buscar todos os Leads específico",
-							"id": "c6e1b6c1-9022-4a6a-8602-852e105a6abe",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": "{{URL_base}}leads/{{id_lead}}",
-								"description": "Buscando todos os Leads"
-							},
-							"response": []
-						}
-					],
-					"id": "f29f5029-41cd-4ff3-98a2-3792050188c5"
-				},
-				{
 					"name": "Criar novo lead",
 					"item": [
 						{
@@ -97,6 +63,40 @@
 						}
 					],
 					"id": "c67d43c1-0018-4466-8d2a-3b1d6fc4f58e"
+				},
+				{
+					"name": "Recuperar todos leads cadastrados",
+					"item": [
+						{
+							"name": "Buscar todos os Leads",
+							"id": "0f30af9a-5d05-4ffa-9750-df0f687ceb02",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{URL_base}}leads",
+								"description": "Buscando todos os Leads"
+							},
+							"response": []
+						},
+						{
+							"name": "Buscar todos os Leads específico",
+							"id": "c6e1b6c1-9022-4a6a-8602-852e105a6abe",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{URL_base}}leads/{{id_lead}}",
+								"description": "Buscando todos os Leads"
+							},
+							"response": []
+						}
+					],
+					"id": "f29f5029-41cd-4ff3-98a2-3792050188c5"
 				},
 				{
 					"name": "Editar lead",
@@ -172,40 +172,6 @@
 			"name": "Leads Lists",
 			"item": [
 				{
-					"name": "Recuperar todas listas de leads cadastradas",
-					"item": [
-						{
-							"name": "Buscar todos os Leads",
-							"id": "0bfa4a65-e486-4229-b5ea-e9d0d2ea5fb8",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": "{{URL_base}}leads",
-								"description": "Buscando todos os Leads"
-							},
-							"response": []
-						},
-						{
-							"name": "Recuperar List Lead",
-							"id": "5b3466a7-6d57-4ce5-a1a7-9b42c263d7ce",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": "{{URL_base}}leads/{{id_lead_list}}",
-								"description": "Buscando todos os Leads"
-							},
-							"response": []
-						}
-					],
-					"id": "f908a634-f5ab-48c3-a795-b26d111e9931"
-				},
-				{
 					"name": "Criar nova lista de lead",
 					"item": [
 						{
@@ -216,7 +182,7 @@
 									"script": {
 										"id": "41ca7397-ba21-4116-bd7f-c074b2549b3c",
 										"exec": [
-											"pm.iterationData.get(\"lead_list_name\")\r",
+											"/*pm.iterationData.get(\"lead_list_name\")*/\r",
 											""
 										],
 										"type": "text/javascript"
@@ -232,19 +198,53 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"name\": \"{{lead_list_name}}\" \r\n}",
+									"raw": "{\r\n  \"name\": \"Lista de teste\" \r\n}\r\n\r\n/*{\r\n  \"name\": \"{{lead_list_name}}\" \r\n}*/",
 									"options": {
 										"raw": {
 											"language": "json"
 										}
 									}
 								},
-								"url": "{{URL_base}}leads"
+								"url": "{{URL_base}}leads_lists"
 							},
 							"response": []
 						}
 					],
 					"id": "3fe31d46-bdd5-481c-b212-ea3f5dc52b1c"
+				},
+				{
+					"name": "Recuperar todas listas de leads cadastradas",
+					"item": [
+						{
+							"name": "Buscar todos os Leads",
+							"id": "0bfa4a65-e486-4229-b5ea-e9d0d2ea5fb8",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{URL_base}}leads_lists",
+								"description": "Buscando todos os Leads"
+							},
+							"response": []
+						},
+						{
+							"name": "Recuperar List Lead",
+							"id": "5b3466a7-6d57-4ce5-a1a7-9b42c263d7ce",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{URL_base}}leads_lists/{{id_lead_list}}",
+								"description": "Buscando todos os Leads"
+							},
+							"response": []
+						}
+					],
+					"id": "f908a634-f5ab-48c3-a795-b26d111e9931"
 				},
 				{
 					"name": "Editar lista de lead",
@@ -280,7 +280,7 @@
 										}
 									}
 								},
-								"url": "{{URL_base}}leads/{{id_lead}}",
+								"url": "{{URL_base}}leads_lists/{{id_lead}}",
 								"description": "Editar Lead"
 							},
 							"response": []
@@ -300,7 +300,7 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": "{{URL_base}}leads/{{id_lead}}"
+								"url": "{{URL_base}}leads_lists/{{id_lead}}"
 							},
 							"response": []
 						}
@@ -324,7 +324,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "3e3ecdc5-3c00-4339-baf6-4912dd982abf",
+				"id": "d9e7cb23-8bc7-42d2-ae33-3f0a59203414",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -334,7 +334,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "0b58d376-15d2-44c0-920c-3213c3751c70",
+				"id": "8a7988bd-1172-4cf5-988a-b1855eade1bf",
 				"type": "text/javascript",
 				"exec": [
 					"",
@@ -372,13 +372,13 @@
 					"    //SAÚDE DA API - Pegar ID e jogar em uma variável e ser ultilizado pelos outros métodos. Depois limpa e executa a mesma lista. Ideal sempre colocar via POST",
 					"   if(pm.info.requestName=='Criar Lead')",
 					"        pm.environment.set(\"id_lead\",pm.response.json().data.id); //Executa a Lead",
-					"    }",
-					"    ",
-					"   if(pm.info.requestName=='Criar List Lead'){",
-					"        pm.environment.set(\"id_lead_list\",pm.response.json().data.leads.list.id); // Executa a List Lead",
 					"",
 					"    ",
-					"}",
+					" }",
+					"    if(pm.info.requestName=='Criar List Lead'){",
+					"    pm.environment.set(\"id_lead_list\",pm.response.json().data.list_id); // Executa a List Lead",
+					"    }",
+					"  ",
 					"//MÉTODOS PUT e DELETE - Valida se retorna a String e Content",
 					"if(pm.request.method=='PUT'|| pm.request.method=='DELETE'){ ",
 					"",
