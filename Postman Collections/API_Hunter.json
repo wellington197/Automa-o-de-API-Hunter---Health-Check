@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "a8ea19ea-59de-43b8-bb4a-484924556c01",
 		"name": "API Hunter",
-		"description": "Coleção de testes da API Hunter.",
+		"description": "Coleção de testes da API Hunter, onde é exeucatdo as Lead e as List Lead",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
@@ -59,8 +59,16 @@
 											"pm.iterationData.get(\"last_name_lead\")\r",
 											"pm.iterationData.get(\"position_lead\")\r",
 											"pm.iterationData.get(\"company_lead\")\r",
-											"pm.iterationData.get(\"industry_lead\")\r",
-											"\r",
+											"pm.iterationData.get(\"industry_lead\")"
+										],
+										"type": "text/javascript"
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"id": "45c00904-90bb-4b23-8c79-8a5858c03828",
+										"exec": [
 											""
 										],
 										"type": "text/javascript"
@@ -76,7 +84,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"email\": \"{{email_lead}}\",\r\n  \"first_name\": \"{{first_name_lead}}\",\r\n  \"last_name\": \"{{last_name_lead}}\",\r\n  \"position\": \"{{position_lead}}\",\r\n  \"company\": \"{{company_lead}}\",\r\n  \"company_industry\": \"{{industry_lead}}\"\r\n  \r\n}",
+									"raw": "{\r\n  \"email\": \"{{email_lead}}\",\r\n  \"first_name\": \"{{first_name_lead}}\",\r\n  \"last_name\": \"{{last_name_lead}}\",\r\n  \"position\": \"{{position_lead}}\",\r\n  \"company\": \"{{company_lead}}\",\r\n  \"company_industry\": \"{{industry_lead}}\"\r\n\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -101,12 +109,13 @@
 									"script": {
 										"id": "1df68c4b-6a2d-455e-a95b-264800912355",
 										"exec": [
-											"pm.iterationData.get(\"email_lead\")\r",
-											"pm.iterationData.get(\"first_name_lead\")\r",
-											"pm.iterationData.get(\"last_name_lead\")\r",
-											"pm.iterationData.get(\"position_lead\")\r",
-											"pm.iterationData.get(\"company_lead\")\r",
-											"pm.iterationData.get(\"industry_lead\")"
+											"pm.iterationData.get(\"email_lead_edit\")\r",
+											"pm.iterationData.get(\"first_name_lead_edit\")\r",
+											"pm.iterationData.get(\"last_name_lead_edit\")\r",
+											"pm.iterationData.get(\"position_lead_edit\")\r",
+											"pm.iterationData.get(\"company_lead_edit\")\r",
+											"pm.iterationData.get(\"industry_lead_edit\")\r",
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -315,7 +324,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "40b99a77-4e5a-4d09-92a7-f0d8904b8f7d",
+				"id": "3e3ecdc5-3c00-4339-baf6-4912dd982abf",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -325,11 +334,11 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "20ce3b64-d278-4ecc-92c2-911e9a9b547e",
+				"id": "0b58d376-15d2-44c0-920c-3213c3751c70",
 				"type": "text/javascript",
 				"exec": [
 					"",
-					"//MÉTODOS GET - Valida se status code está retornando de forma correta para o Método GET",
+					"//MÉTODOS GET - Valida se status code está retornando de forma correta para os Métodos GET",
 					"if(pm.request.method=='GET'){ ",
 					"        pm.test(\"Status code is 200\", function () {",
 					"            pm.response.to.have.status(200);",
@@ -358,27 +367,31 @@
 					"        pm.response.to.have.status(\"Created\");",
 					"    });",
 					"",
+					"  ",
+					"  ",
+					"    //SAÚDE DA API - Pegar ID e jogar em uma variável e ser ultilizado pelos outros métodos. Depois limpa e executa a mesma lista. Ideal sempre colocar via POST",
+					"   if(pm.info.requestName=='Criar Lead')",
+					"        pm.environment.set(\"id_lead\",pm.response.json().data.id); //Executa a Lead",
+					"    }",
+					"    ",
+					"   if(pm.info.requestName=='Criar List Lead'){",
+					"        pm.environment.set(\"id_lead_list\",pm.response.json().data.leads.list.id); // Executa a List Lead",
+					"",
+					"    ",
 					"}",
-					"",
-					"",
-					"//MÉTODOS PUT e POST - Valida se retorna a String",
-					"if(pm.request.method=='PUT'|| pm.request.method=='POST'){ ",
+					"//MÉTODOS PUT e DELETE - Valida se retorna a String e Content",
+					"if(pm.request.method=='PUT'|| pm.request.method=='DELETE'){ ",
 					"",
 					"    pm.test(\"Status code name has string\", function () {",
 					"        pm.response.to.have.status(\"No Content\");",
 					"    });",
 					"",
-					"",
+					"    pm.test(\"Status code is 204\", function () {",
+					"        pm.response.to.have.status(204);",
+					"    });",
 					"}"
 				]
 			}
-		}
-	],
-	"variable": [
-		{
-			"id": "f8527ac7-b1e7-48f0-9274-ecd7ee795917",
-			"key": "id_lead",
-			"value": "1111"
 		}
 	]
 }
