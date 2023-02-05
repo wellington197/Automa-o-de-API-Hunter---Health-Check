@@ -324,7 +324,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "d9e7cb23-8bc7-42d2-ae33-3f0a59203414",
+				"id": "5c80f0bc-6473-467e-8443-8b819d4854ea",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -334,7 +334,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "8a7988bd-1172-4cf5-988a-b1855eade1bf",
+				"id": "9e051b11-279a-4dd9-ad20-b338f8820468",
 				"type": "text/javascript",
 				"exec": [
 					"",
@@ -376,7 +376,7 @@
 					"    ",
 					" }",
 					"    if(pm.info.requestName=='Criar List Lead'){",
-					"    pm.environment.set(\"id_lead_list\",pm.response.json().data.list_id); // Executa a List Lead",
+					"    pm.environment.set(\"id_lead_list\",pm.response.json().data.id); // Executa a List Lead",
 					"    }",
 					"  ",
 					"//MÉTODOS PUT e DELETE - Valida se retorna a String e Content",
