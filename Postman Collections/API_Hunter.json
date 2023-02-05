@@ -324,7 +324,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "5c80f0bc-6473-467e-8443-8b819d4854ea",
+				"id": "095a460a-9b87-4052-9b74-3f456757c632",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -334,7 +334,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "9e051b11-279a-4dd9-ad20-b338f8820468",
+				"id": "d569073c-93b5-4d2a-ad26-2208ff9d6b44",
 				"type": "text/javascript",
 				"exec": [
 					"",
@@ -370,14 +370,15 @@
 					"  ",
 					"  ",
 					"    //SAÚDE DA API - Pegar ID e jogar em uma variável e ser ultilizado pelos outros métodos. Depois limpa e executa a mesma lista. Ideal sempre colocar via POST",
-					"   if(pm.info.requestName=='Criar Lead')",
+					"   if(pm.info.requestName=='Criar Lead'){",
 					"        pm.environment.set(\"id_lead\",pm.response.json().data.id); //Executa a Lead",
-					"",
-					"    ",
-					" }",
+					"   }",
 					"    if(pm.info.requestName=='Criar List Lead'){",
 					"    pm.environment.set(\"id_lead_list\",pm.response.json().data.id); // Executa a List Lead",
 					"    }",
+					"    ",
+					" }",
+					" ",
 					"  ",
 					"//MÉTODOS PUT e DELETE - Valida se retorna a String e Content",
 					"if(pm.request.method=='PUT'|| pm.request.method=='DELETE'){ ",
