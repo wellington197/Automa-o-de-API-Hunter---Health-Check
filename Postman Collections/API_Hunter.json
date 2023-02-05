@@ -238,7 +238,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{URL_base}}leads/{{id_lead_list}}",
+								"url": "{{URL_base}}leads_lists/{{id_lead_list}}",
 								"description": "Buscando todos os Leads"
 							},
 							"response": []
