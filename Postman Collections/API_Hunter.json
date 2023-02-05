@@ -205,7 +205,7 @@
 										}
 									}
 								},
-								"url": "{{URL_base}}leads"
+								"url": "{{URL_base}}leads_lists"
 							},
 							"response": []
 						}
