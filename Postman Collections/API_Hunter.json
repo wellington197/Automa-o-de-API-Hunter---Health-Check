@@ -273,14 +273,14 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"name\": \"{{lead_list_name_edit}}\" \r\n}",
+									"raw": "{\r\n  \"name\": \"{{lead_list_name_edit}}\" \r\n}\r\n\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
 										}
 									}
 								},
-								"url": "{{URL_base}}leads_lists/{{id_lead}}",
+								"url": "{{URL_base}}leads_lists/{{id_lead_list}}",
 								"description": "Editar Lead"
 							},
 							"response": []
