@@ -182,7 +182,7 @@
 									"script": {
 										"id": "41ca7397-ba21-4116-bd7f-c074b2549b3c",
 										"exec": [
-											"/*pm.iterationData.get(\"lead_list_name\")*/\r",
+											"pm.iterationData.get(\"lead_list_name\")\r",
 											""
 										],
 										"type": "text/javascript"
@@ -198,7 +198,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"name\": \"Lista de teste\" \r\n}\r\n\r\n/*{\r\n  \"name\": \"{{lead_list_name}}\" \r\n}*/",
+									"raw": "{\r\n  \"name\": \"{{lead_list_name}}\" \r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
