@@ -59,7 +59,118 @@
 								},
 								"url": "{{URL_base}}leads"
 							},
-							"response": []
+							"response": [
+								{
+									"id": "4d3b9296-6061-4a94-a984-aff8087c5207",
+									"name": "Criar Lead",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "/*Monitor não aceita dados externos, com misso iremos colocar dados fixos*/\r\n\r\n{\r\n  \"email\": \"{{email_lead}}\",\r\n  \"first_name\": \"{{first_name_lead}}\",\r\n  \"last_name\": \"{{last_name_lead}}\",\r\n  \"position\": \"{{position_lead}}\",\r\n  \"company\": \"{{company_lead}}\",\r\n  \"company_industry\": \"{{industry_lead}}\"\r\n\r\n}\r\n/*{\r\n  \"email\": \"{{email_lead}}\",\r\n  \"first_name\": \"{{first_name_lead}}\",\r\n  \"last_name\": \"{{last_name_lead}}\",\r\n  \"position\": \"{{position_lead}}\",\r\n  \"company\": \"{{company_lead}}\",\r\n  \"company_industry\": \"{{industry_lead}}\"\r\n\r\n}\r\n*/",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{URL_base}}leads"
+									},
+									"status": "Unprocessable Entity",
+									"code": 422,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Sat, 24 Jun 2023 22:50:35 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "139"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "Email-Hunter-Origin"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET, POST, PUT, DELETE, OPTIONS"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache"
+										},
+										{
+											"key": "Permissions-Policy",
+											"value": "interest-cohort=()"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "strict-origin-when-cross-origin"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "X-Request-Id",
+											"value": "ba60f93c-3720-475c-8e3e-18ce213b4d1c"
+										},
+										{
+											"key": "X-Runtime",
+											"value": "0.052344"
+										},
+										{
+											"key": "X-User",
+											"value": "3688481"
+										},
+										{
+											"key": "CF-Cache-Status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains; preload"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "CF-RAY",
+											"value": "7dc887cf3e38a493-GRU"
+										},
+										{
+											"key": "alt-svc",
+											"value": "h3=\":443\"; ma=86400"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"errors\": [\n        {\n            \"id\": \"wrong_field_value\",\n            \"code\": 422,\n            \"details\": \"A valid email address is required.\"\n        }\n    ]\n}"
+								}
+							]
 						}
 					],
 					"id": "c67d43c1-0018-4466-8d2a-3b1d6fc4f58e"
@@ -315,8 +426,8 @@
 	"auth": {
 		"type": "apikey",
 		"apikey": {
-			"in": "query",
 			"value": "44d82e13d002262ac14fdbfc779a75bcf5a417ea",
+			"in": "query",
 			"key": "api_key"
 		}
 	},
@@ -324,7 +435,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "6507968b-2656-4eaa-bfc9-cf95329d85aa",
+				"id": "558d066b-f0b7-42c4-b6a8-ec7d874ca38c",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -334,7 +445,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "e23d2ae9-0758-41b1-9fc0-4900267917fb",
+				"id": "033c6429-9f40-4b2a-b59c-550d58e10c6d",
 				"type": "text/javascript",
 				"exec": [
 					"",
